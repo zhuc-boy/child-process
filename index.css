@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  ul {
+    list-style: none;
+  }
+  .left-second-level {
+  }
+  .left-first-level {
+  }
+  .left-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: hidden;
+    margin-top: 40px;
+    width: 180px;
+  }
+  .navbar-right {
+    display: flex;
+
+  }
+  .navbar-left {
+
+    display: flex;
+  }
+  .navbar {
+    width: 100%;
+    height: 40px;
+  }
+  .main-part {
+    padding: 40px 20px;
+    margin-left: 180px;
+  }
+  .clicked1 {
+    color: chocolate;
+    border-left: 4px solid #19aa8d;
+  }
+  /*ul > li {
+    color: #a7b1c2;
+    cursor: pointer;
+  }*/
+  .left-first-level>  li > a {
+    color: #a7b1c2;
+    font-weight: 600;
+    padding: 14px 20px 14px 25px;
+    display: block;
+}
+.left-second-level li a {
+    padding: 7px 10px 7px 10px;
+    padding-left: 52px;}
+  .div {
+    display: flex;
+    align-items: center;
+  }
+  .div input {
+    width: 2rem;
+  }
+  .left-second {
+    display: none;
+  }
+  .left-second-level > li.clicked1 {
+    border: none;
+  }
+  .left-nav li:focus,
+  .left-nav li:hover {
+    color: chocolate !important;
+  }
+  .clicked2 {
+    color: chocolate;
+    /*border-top: 4px solid #19aa8d;*/
+  }
+  .navbar-header {
+    display: inline-block;
+  }
+  .navbar-header img {
+    height: 40px;
+    max-width: 100%;
+  }
+  .collapse {
+      width: 100%;
+    display: flex;
+    justify-content:space-between;
+    cursor: pointer;
+  }
+  .container-fluid{
+      display: flex;
+  }
+  .left-first-level .right{
+      float: right;
+      line-height: 1.42857
+  }
+  .clicked2::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    left: calc(50% - 7px);
+    width: 14px;
+    height: 4px;
+    background: #409eff;
+  }
+  .navbar-left li{
+      position: relative;
+      padding: 0 12px;
+
+  }
+  .navbar-left li span{
+    line-height: 2.42857
+  }
+  .navbar-right li span{
+    line-height: 2.42857
+  }
+  .left-nav ,
+  .navbar{
+      cursor: pointer;
+  }

@@ -1,0 +1,203 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="icon" type="imag/x-icon" href="./img/facion.gif" />
+    <!--
+        <link href="./style.css" rel="stylesheet" />
+    -->
+    <link href="./index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header" style="background-color:blue;width: 180px;">
+                <img src="data:image/png;base64,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" />
+            </div>
+            <div class="collapse">
+                <ul class="navbar-left main-nav" id="first-navi">
+                    <li>
+                        <a><span>主页</span></a>
+                    </li>
+                    <li>
+                        <a> <span>主页</span> </a>
+                    </li>
+                    <li>
+                        <a> <span>主页</span> </a>
+                    </li>
+                    <li>
+                        <a> <span>主页</span></a>
+                    </li>
+                    <li>
+                        <a> <span>主页</span> </a>
+                    </li>
+                </ul>
+                <ul class="navbar-right login-out">
+                    <li>
+                        <a><span>admin </span></a>
+                    </li>
+                    <li>
+                        <a><span>quit</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="left-nav nav">
+        <ul class="left-first-level left-first" id="second-navi">
+            <li>
+                <a>
+                    <i class="el-icon-menu"></i>
+                    <span>Part1</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="el-icon-menu"></i>
+                    <span>Part2</span>
+                    <i class="el-icon-arrow-left right"></i>
+                </a>
+                <ul class="left-second-level left-second">
+                    <!--id="third-navi">-->
+                    <li>
+                        <a><span>part11</span></a>
+                    </li>
+                    <li>
+                        <a><span>part12</span></a>
+                    </li>
+                    <li>
+                        <a><span>part13</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>
+                    <i class="el-icon-menu"></i>
+                    <span>Part3</span></a>
+            </li>
+            <li>
+                <a>
+                    <i class="el-icon-menu"></i>
+                    <span>Part4</span>
+                    <i class="el-icon-arrow-left right"></i>
+                </a>
+                <ul class="left-second-level left-second">
+                    <!--id="third-navi">-->
+                    <li>
+                        <a><span>part41</span></a>
+                    </li>
+                    <li>
+                        <a><span>part42</span></a>
+                    </li>
+                    <li>
+                        <a><span>part43</span></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="main-part"></div>
+</body>
+<script>
+    var menu = {
+        我的: {
+            le1: "url1",
+            le2: "url1",
+            le3: "url1"
+        },
+        part1: {
+            dwad1: "url2",
+            dwad2: "url2",
+            dwad3: "url2",
+            dwad4: "url2",
+            dwad5: "url2",
+            dwad6: "url2"
+        },
+        part2: {
+            gggg1: "url3",
+            gggg2: "url3",
+            gggg3: "url3",
+            gggg4: "url3"
+        },
+        part3: {
+            eee1: "url4",
+            eee2: "url4"
+        }
+    };
+    //JSON.stringify(menu);
+</script>
+<script>
+    $("#first-navi");
+    $("#second-navi");
+    $("#third-navi");
+    $("<a></a>")
+        .attr({ href: "/" })
+        .append(
+            $("<li></li>")
+                .text("ceshi")
+                .addClass("ceshi")
+        ); //三种);
+</script>
+<script>
+    $(document).ready(function () {
+        $(".left-first-level>li").click(function (e) {
+            $(".left-second-level>li").removeClass("clicked1");
+            $(this).addClass("clicked1");
+            $(this)
+                .siblings()
+                .removeClass("clicked1");
+            if ($(this).children("ul")[0]) {
+                var secondindex = $(".left-second-level").index(
+                    $(this).children("ul")
+                );
+                $(".left-second-level")
+                    .not($(".left-second-level").eq(secondindex))
+                    .addClass("left-second");
+                $(this)
+                    .children("ul")
+                    .toggleClass("left-second");
+                /*if (
+                  $(this)
+                    .children("ul")
+                    .hasClass("left-second")
+                ) {
+                  $(this)
+                    .children("ul")
+                    .removeClass("left-second");
+                } else {
+                  $(this)
+                    .children("ul")
+                    .addClass("left-second");
+                }*/
+            } else {
+                $(".left-second-level").addClass("left-second");
+            }
+        });
+        $(".left-second-level>li").click(function (e) {
+            e.stopPropagation();
+            $(this)
+                .siblings()
+                .removeClass("clicked1");
+            $(this).addClass("clicked1");
+            $(this)
+                .parent()
+                .parent()
+                .siblings()
+                .removeClass("clicked1");
+        });
+        $(".navbar-left>li").click(function (e) {
+            $(this)
+                .siblings()
+                .removeClass("clicked2");
+            $(this).addClass("clicked2");
+            $(".left-second-level>li").removeClass("clicked1");
+            $(".left-first-level>li").removeClass("clicked1");
+        });
+    });
+    var fix = f => (x => f(v => x(x)(v)))(x => f(v => x(x)(v)));
+</script>
+
+</html>
